@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodwagon</title>
+    <style>
+      #d1 {
+        height: 90vh;
+        width: 100%;
+        background-color: #ffb30e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #d2 {
+        height: 60vh;
+        width: 35%;
+        font-size: x-large;
+      }
+      #txt {
+        width: 100%;
+      }
+      #d3 {
+        height: 20vh;
+        width: 90%;
+        background-color: aliceblue;
+        /* border-radius: 5%; */
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      #img1:hover {
+        padding-bottom: 100px;
+        transition: 1s ease-in-out;
+      }
+
+      #d5 {
+        height: 50%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+      }
+      #Delivery {
+        background-color: rgb(242, 168, 168);
+        border-radius: 10%;
+      }
+      #Pickup {
+        margin-left: 50px;
+      }
+
+      #d11 {
+        height: 70vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+      }
+      #d12 {
+        padding-right: 20px;
+      }
+      #day {
+        height: 25px;
+        width: 160px;
+        background-color: rgb(255, 195, 211);
+        padding-left: 20px;
+        font-stretch: wider;
+        color: rgb(233, 103, 48);
+        border-radius: 0%;
+        font-weight: bold;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      #dishname {
+        font-weight: 900;
+        font-size: larger;
+      }
+      #imgfood {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      #d21 {
+        height: 70vh;
+        width: 100%;
+        background-color: rgb(237, 215, 215);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: inline;
+        
+      }
+      #d23
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #d24
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #d22
+      {
+        padding-top: 5%;
+        padding-left: 5%;
+      }
+      #d31
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+      }
+      #d32
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #d34
+      {
+        height: 200px;
+        width: 200px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+      }
+      #btnordernow
+      {
+        height: 100%;
+        width: 100%;
+        background-color: #fa8b24;
+        border: 0px solid orange;
+        border-radius: 5px;
+        color: aliceblue;
+        font-size:medium;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      #btnordernow:hover
+      {
+        background-color: #874907;
+      }
+      #d33
+      {
+        padding-left: 10px;
+      }
+       #opengreen {
+        height: 25px;
+        width: 160px;
+        background-color: rgb(163, 252, 187);
+        padding-left: 20px;
+        font-stretch: wider;
+        color: rgb(9, 139, 50);
+        border-radius: 0%;
+        font-weight: bold;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-weight: bolder;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+       #openred {
+        height: 25px;
+        width: 160px;
+        background-color: rgb(255, 195, 211);
+        padding-left: 20px;
+        font-stretch: wider;
+        color: rgb(233, 103, 48);
+        border-radius: 0%;
+        font-weight: bold;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-weight: bolder;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      #d41
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+      #d42
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #d43
+      {
+        display: inline;
+        padding-left: 10px;
+        padding-top: 30px;
+      }
+      #d44
+      {
+        height: 220px;
+        width: 260px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      #d45
+      {
+        display: flex;
+        padding-top: 10px;
+      }
+      #d46
+      {
+        padding-top: 10px;
+        font-size: larger;
+        padding-left: 10px;
+      }
+       #d48
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+      }
+       #d51
+      {
+        padding-top: 50px;
+        padding-bottom: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+      #ip1
+      {
+        height: 5vh;
+        width: 60%;
+        border: 0px solid white;
+        padding-left: 5px;
+      }
+      #btn1
+      {
+        height: 5vh;
+        width: 20vh;
+        border: 0px solid orange;
+        background-color: orange;
+        color: white;
+        font-size:medium;
+        font-weight: bold;
+      }
+      #btn1:hover
+      {
+        background-color: #874907;
+        opacity: 2s;
+      }
+      #btnview
+      {
+        height: 10%;
+        width: 10%;
+        background-color: #fa8b24;
+        border: 0px solid orange;
+        border-radius: 5px;
+        color: aliceblue;
+        font-size:large;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      #btnview:hover
+      {
+        color: silver;
+        background-color: #874907;
+      }
+      #hed
+      {
+        width: 100%;
+        display: flex;
+        background-color: rgb(230, 238, 234);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+      }
+      #hed1
+      {
+       display: flex;
+       padding-left: 15%;
+      }
+      #hed2
+      {
+        padding-left: 10px;
+        font-size:x-large;
+        font-weight:900;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: orange;
+      }
+      #hed3
+      {
+        padding-left: 40px;
+        padding-top: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+      }
+      #hed4
+      {
+        padding-left: 30px;
+        padding-top: 15px;
+      }
+      #hed5
+      {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 300px;
+        border: 0px solid white;
+        color: silver;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-size: medium;
+        border-radius: 10px;
+      }
+      #hed6
+      {
+         padding-left: 10px;
+        padding-top: 15px;
+      }
+      #hed7
+      {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 120px;
+        background-color: white;
+        color: orange;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-size:larger;
+        border-radius: 10px;
+        border: 0px solid white;
+      }
+
+      #s5
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #d63
+      {
+        border-radius: 50%;
+        padding-top: 15%;
+        padding-bottom: 5%;
+      }
+
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="hed">
+      <div id="hed1">
+        <img src="/D21/logo.svg"/>
+      <h3 id="hed2">foodwaGon</h3>
+      </div>
+      <div id="hed3"><p><b id="b1">Deliver to:  </b>    Current Location <b id="b1">Mirpur 1 Bus Stand, Dhaka</b></p>
+      </div>
+      <div id="hed4"><input id="hed5" type="text" value="                 Search Food"></div>
+      <div id="hed6"><input id="hed7" type="button" value="Login"/></div>
+    </div>
+    <div id="d1">
+      <div id="d2">
+        <div id="txt">
+          <h1 style="color: white">Are you starving ?</h1>
+          <h3 style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Within a few clicks, find meals</h3>
+          <h3 style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">thatare accessible near you</h3>
+        </div>
+        <div id="d3">
+          <div id="d5">
+            <div id="Delivery">🏍️Delivery</div>
+            <div id="Pickup">👜Pickup</div>
+          </div>
+          <div id="d6">
+            <input id="ip1" type="text" placeholder="    Enter Your Address" />
+            <button id="btn1">Find Food</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="d4">
+        <img
+          id="img1"
+          src="/D21/hero-header.png"
+          height="500px"
+          width="500px"
+        />
+      </div>
+    </div>
+    <div id="d11">
+      <div id="d12">
+        <img
+          id="imgfood"
+          src="/D21/discount-item-1.png"
+          height="250px"
+          width="280px"
+        />
+        <h3 id="dishname">Flat Hill Slingback</h3>
+        <h3 id="day">6 days Remaining</h3>
+      </div>
+      <div id="d12">
+        <img
+          id="imgfood"
+          src="/D21/discount-item-2.png"
+          height="250px"
+          width="280px"
+        />
+        <h3 id="dishname">Ocean Blue Ring</h3>
+        <h3 id="day">6 days Remaining</h3>
+      </div>
+      <div id="d12">
+        <img
+          id="imgfood"
+          src="/D21/discount-item-3.png"
+          height="250px"
+          width="280px"
+        />
+        <h3 id="dishname">Brown Leathered Wallet</h3>
+        <h3 id="day">6 days Remaining</h3>
+      </div>
+      <div id="d14">
+        <img
+          id="imgfood"
+          src="/D21/discount-item-4.png"
+          height="250px"
+          width="280px"
+        />
+        <h3 id="dishname">Silverside Wristwatch</h3>
+        <h3 id="day">6 days Remaining</h3>
+      </div>
+    </div>
+    <section id="s1" style="padding-bottom: 60px; background-color: rgb(241, 221, 221);">
+    <div id="d21">
+      <div id="d24" style="font-size: x-large;" ><h1 style=" padding-top: 20px; color: rgb(208, 57, 26)">
+        How does it work
+      </h1></div>
+      <div id="d23">
+      <div id="d22">
+        <img src="/D21/location.png" />
+        <p>
+          <b>Select location</b> <br />Choose the location where<br />
+          your food will be delivered.
+        </p>
+      </div>
+      <div id="d22">
+        <img src="/D21/order.png" />
+        <p>
+          <b>Choose order</b> <br />Check over hundreds of<br />
+          menus to pick your favorite<br />food
+        </p>
+      </div>
+      <div id="d22">
+        <img src="/D21/pay.png" />
+        <p>
+          <b>Pay advanced</b> <br />It's quick, safe, and simple.<br />
+          Select several methods of<br />payment
+        </p>
+      </div>
+      <div id="d22">
+        <img src="/D21/meals.png" />
+        <p>
+          <b>Enjoy meals</b> <br />Food is made and delivered<br />
+          directly to your home.
+        </p>
+      </div>
+      </div>
+      </section>
+      <section id="s2" style="padding-bottom: 70px;">
+        <div id="d31"><h1 style="padding-bottom: 30px; padding-top: 30px; color:black">Popular items</h1></div>
+        <div id="d32">
+          <div id="d33">
+        <img id="d34" src="/D21/cheese-burger.png" />
+        <p>
+          <b style="font-size: large; ">Cheese Burger</b><br /><span style="color: #ffb30e;">Burger Arena</span><br />
+          <b style="font-size: large; ">$3.88</b><br /><input id="btnordernow" type="button" value="Order Now">
+        </p>
+      </div>
+        <div id="d33">
+        <img id="d34" src="/D21/toffes-cake.png" />
+        <p>
+          <b style="font-size: large; ">Toffe's Cake</b><br /><span style="color: #ffb30e;">Top Sticks</span><br />
+          <b style="font-size: large; ">$4.00</b><br /><input id="btnordernow" type="button" value="Order Now">
+        </p>
+      </div>
+        <div id="d33">
+        <img id="d34" src="/D21/dancake.png" />
+        <p>
+          <b style="font-size: large; ">Dancake</b><br /><span style="color: #ffb30e;">Cake World</span><br />
+          <b style="font-size: large; ">$1.99</b><br /><input id="btnordernow" type="button" value="Order Now">
+        </p>
+      </div>
+        <div id="d33">
+        <img id="d34" src="/D21/crispy-sandwitch.png" />
+        <p>
+          <b style="font-size: large; ">Crispy Sandwitch</b><br /><span style="color: #ffb30e;">Fastfood Dine</span><br />
+          <b style="font-size: large; ">$3.00</b><br /><input id="btnordernow" type="button" value="Order Now">
+        </p>
+      </div>
+        <div id="d33">
+        <img id="d34" src="/D21/thai-soup.png" />
+        <p>
+          <b style="font-size: large; ">Thai Soup</b><br /><span style="color: #ffb30e;">Foody Man</span><br />
+          <b style="font-size: large; ">$2.79</b><br /><input id="btnordernow" type="button" value="Order Now">
+        </p>
+      </div>
+        </div>
+      </section>
+
+      <section id="s3">
+        <div id="d41"><h1 style="padding-bottom: 30px; padding-top: 30px; color:black">Featured Restaurants</h1></div>
+      <div id="d42">
+      <div id="d43">
+        <img id="d44" src="/D21/food-world.png" />
+        <div id="d45"><img src="/D21/food-world-logo.png"/><div id="d46"><b>Food world</b><br><span>⭐46</span></div></div>
+        <div id="d47"><h3 id="openred">Opens Tomarrow</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/pizza-hub.png" />
+        <div id="d45"><img src="/D21/pizzahub-logo.png"/><div id="d46"><b>Pizza hub</b><br><span>⭐40</span></div></div>
+        <div id="d47"><h3 id="openred">Opens Tomarrow</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/donuts-hut.png" />
+        <div id="d45"><img src="/D21/donuts-hut-logo.png"/><div id="d46"><b>Donuts hut</b><br><span>⭐20</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/donuthut.png" />
+        <div id="d45"><img src="/D21/donut-hut-logo.png"/><div id="d46"><b>Donuts hut</b><br><span>⭐50</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      </div>
+            <div id="d48">
+      <div id="d43">
+        <img id="d44" src="/D21/ruby-tuesday.png" />
+        <div id="d45"><img src="/D21/ruby-tuesday-logo.png"/><div id="d46"><b>Ruby tuesday</b><br><span>⭐46</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/kuakata.png" />
+        <div id="d45"><img src="/D21/kuakata-logo.png"/><div id="d46"><b>Kuakata fried Chiken</b><br><span>⭐40</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/red-square.png" />
+        <div id="d45"><img src="/D21/red-square-logo.png"/><div id="d46"><b>Kuakata Fried Chicken</b><br><span>⭐20</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      <div id="d43">
+        <img id="d44" src="/D21/taco-bell.png" />
+        <div id="d45"><img src="/D21/taco-bell-logo.png"/><div id="d46"><b>Taco bell</b><br><span>⭐50</span></div></div>
+        <div id="d47"><h3 id="opengreen">Opens Now</h3></div>
+      </div>
+      </div>
+      </section>
+      <section id="s4">
+        <div id="d51"><input id="btnview" type="button" value="View All  >"/></div>
+      </section>
+
+      <section id="s5"><div id="d62">
+        <div id="d63"><h1 style="font-size: xx-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="sbf">Search By Food</h1>
+        <!-- <button>View All >></button> ➡️⬅️ -->
+      </div>
+        <div id="d64">
+
+        <table>
+          <th><img id="d63" src="/D21/search-pizza.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Pizza</b></h4></th>
+        <th><img id="d63" src="/D21/burger.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Burger</b></h4></th>
+        <th><img id="d63" src="/D21/noodles.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Noodles</b></h4></th>
+        <th><img id="d63" src="/D21/sub-sandwich.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Sub-sandwiches</b></h4></th>
+        <th><img id="d63" src="/D21/chowmein.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Chowmein</b></h4></th>
+        <th><img id="d63" src="/D21/steak.png"/>
+        <h4 style="padding-left: 5%; font-weight: bolder; font-size:large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Steak</b></h4></th>
+        </table>
+
+        
+       </div>
+
+      </section>
+    </div>
+  </body>
+</html>
